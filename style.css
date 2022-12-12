@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+*{
+  font-family: 'Lexend Deca', sans-serif;
+  scroll-behavior: smooth;
+  transition: all .5s;
+}
+
+*::selection{
+  color: white;
+  background-color: #004b8f;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #201b2c00; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #004b8f;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1880c0; 
+  transition: 5s;
+}
+
+body {
+  background: lightgray;
+}
+
+.himg{
+  width: 300px;
+}
+
+.logo , .slogan{
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.logo::selection , .slogan::selection{
+  color: #004b8f;
+  background-color: white;
+}
+.topo {
+  background: #004b8f;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 white;
+  height: 180px;
+}
+
+.planos {
+  border: solid 0px #004b8f;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px 0 white;
+  cursor: pointer;
+  border: 5px solid transparent;
+  transition: all .5s;
+}
+
+.planos:hover{
+  color: #004b8f;
+  border: 2px solid #136497;
+  border-radius: 10px;
+}
+
+.botao {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  border: solid 2px#004b8f;;
+  color: #004b8f;
+  background: white;
+}
+
+.botao:hover {
+  background-color: #004b8f;
+  color: white;
+  transition: .5s;
+}
+
+.botao:hover::after {
+  color: #004b8f;
+  background: white;
+  /* transition: 0.5s; */
+}
+
+h1 {
+  margin: 0;
+  font-size: 100px;
+  font-family: "Righteous";
+}
+
+h2 {
+  margin: 0;
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+h5 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: black;
+}
+
+h6 {
+  color: red;
+}
+
+img {
+  width: 130px;
+  border-radius: 10px;
+  float: right;
+}
+
+footer {
+  background: #004b8f;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 white;
+  text-align: center;
+  align-items: center;
+}
+
+footer .icones_social, footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .icones_social li, footer .menu li {
+    list-style: none;
+}
+
+footer .icones_social li a {
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .icones_social li a:hover {
+    transform: translateY(-10px);
+}
+
+footer .menu li a {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+    transition: 0.5s;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+}
+
+.promos {
+  background: white;
+  padding: 0px;
+  height: 150px;
+  min-width: 30px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  box-shadow: 0 0 10px 0 blue;
+  cursor: pointer;
+  border: 5px solid white;
+}
+
+.promos .promoimg{
+  width: 150px;
+}
+
+@media only screen and (max-width: 950px){
+
+  .tela{
+    width: 100%;
+  }
+
+  .topo{
+    height: 280px;
+    /* flex-direction: column;
+    justify-content: space-between; */
+  }
+
+  .logo{
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .slogan{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .promos {
+    padding-top: 0px;
+  }
+
+  .promos h4{
+    margin-top: 0;
+    margin-bottom: 0px;
+    font-size: 15px;
+  }
+
+  .promos h6{
+    font-size: 10px;
+  }
+}
