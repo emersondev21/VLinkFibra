@@ -15,18 +15,15 @@
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #201b2c00; 
 }
- 
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
   background: #004b8f;
   border-radius: 50px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #1880c0; 
   transition: 5s;
@@ -55,6 +52,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px 0 white;
   height: 180px;
+  
 }
 
 .planos {
@@ -213,8 +211,10 @@ footer .menu li a:hover {
 
   .topo{
     height: 280px;
-    /* flex-direction: column;
-    justify-content: space-between; */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
   }
 
   .logo{
